@@ -3,7 +3,7 @@ import ProductCard from "../../components/shared/product/productCard";
 export default function Kategorier() {
   return (
     <section className="w-full">
-      <div className="my-10 flex flex-col justify-center items-center">
+      <div className="my-10 h-[140px] flex flex-col justify-center items-center">
         <p className="text-[23px] text-center tracking-wide text-textOnPrimary mb-2">
           Sök bland kategorier
         </p>
