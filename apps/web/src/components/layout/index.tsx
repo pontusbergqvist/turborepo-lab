@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
           <Header />
           <main className="mx-auto">{children}</main>
         </div>
-        <nav className="w-full fixed bottom-0 left-0 bg-secondary p-2">
+        <nav className="w-full fixed z-40 bottom-0 left-0 bg-secondary p-2">
           <ul className="flex justify-between max-w-[450px] mx-auto">
             <Link href="/sok">
               <li className="flex flex-col items-center">
