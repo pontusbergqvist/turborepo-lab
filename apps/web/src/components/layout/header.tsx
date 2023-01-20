@@ -7,8 +7,9 @@ const Header = () => {
 
   const getHeadingFromRoute = (route: string): string => {
     if (route.startsWith("/favoriter")) return "Favoriter";
-    if (route.startsWith("/sok")) return "Sök produkt";
+    if (route.startsWith("/sok")) return "Sök EVM";
     if (route.startsWith("/kategorier")) return "Kategorier";
+    return "EVM-katalog";
   };
 
   return (
