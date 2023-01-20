@@ -1,6 +1,7 @@
+import { NextPage } from "next";
 import ProductCard from "../../components/shared/product/productCard";
 
-export default function Kategorier() {
+const Kategorier: NextPage = () => {
   return (
     <section className="w-full">
       <div className="my-10 h-[140px] flex flex-col justify-center items-center">
@@ -22,4 +23,6 @@ export default function Kategorier() {
       </div>
     </section>
   );
-}
+};
+
+export default Kategorier;

@@ -1,7 +1,8 @@
+import { NextPage } from "next";
 import ProductCard from "../components/shared/product/productCard";
 import Favorite from "../components/shared/icons/favorite";
 
-export default function Favoriter() {
+const Favoriter: NextPage = () => {
   return (
     <div>
       <section className="flex flex-col items-center text-textOnPrimary my-10">
@@ -22,4 +23,6 @@ export default function Favoriter() {
       </div>
     </div>
   );
-}
+};
+
+export default Favoriter;
