@@ -1,10 +1,10 @@
 import { NextPage } from "next";
-import ProductCard from "../../components/shared/product/productCard";
+import CategoryCard from "../../components/shared/category/categoryCard";
 
 const Kategorier: NextPage = () => {
   return (
     <section className="w-full">
-      <div className="my-10 h-[140px] flex flex-col justify-center items-center">
+      <div className="my-10 h-[140px] flex flex-col justify-center items-center ">
         <p className="text-[23px] text-center tracking-wide text-textOnPrimary mb-2">
           Sök bland kategorier
         </p>
@@ -14,12 +14,27 @@ const Kategorier: NextPage = () => {
           placeholder="Sök"
         />
       </div>
-      <div className="bg-secondary grid grid-cols-2 gap-2 relative after:content-[''] after:block after:h-full after:w-[2px] after:absolute after:bg-gray-200 after:left-1/2 after:-translate-x-1/2">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+      <div className="grid grid-cols-2 gap-2">
+        <CategoryCard />
+        <CategoryCard />
+        <CategoryCard />
+        <CategoryCard />
+        <CategoryCard />
+        <CategoryCard />
+        <CategoryCard />
+        <CategoryCard />
+        <CategoryCard />
+        <CategoryCard />
+        <CategoryCard />
+        <CategoryCard />
+        <CategoryCard />
+        <CategoryCard />
+        <CategoryCard />
+        <CategoryCard />
+        <CategoryCard />
+        <CategoryCard />
+        <CategoryCard />
+        <CategoryCard />
       </div>
     </section>
   );

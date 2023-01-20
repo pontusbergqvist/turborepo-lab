@@ -1,48 +1,38 @@
 import { NextPage } from "next";
+import CategoryCard from "../components/shared/category/categoryCard";
+import ProductCard from "../components/shared/product/productCard";
 
 const Sok: NextPage = () => {
   return (
     <section>
-      <div className="my-10 h-[140px] flex flex-col justify-center items-center">
-        <p className="text-[23px] text-center tracking-wide text-textOnPrimary mb-2">
+      <div className="relative py-40 mt-1 h-[140px] flex flex-col justify-center items-center bg-[url('https://images.unsplash.com/photo-1576402187878-974f70c890a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80')] bg-cover after:content-[''] after:block after:h-full after:w-full after:bg-black after:absolute after:opacity-30">
+        <p className="text-[23px] text-center tracking-wide text-white mb-2 z-10">
           Sök bland produkter
         </p>
         <input
           type="text"
-          className="w-4/5 max-w-[500px] p-3 rounded-xl"
+          className="w-4/5 max-w-[500px] p-3 rounded-xl z-10"
           placeholder="Sök"
         />
       </div>
       <div className="text-[15px]">
         <div className="my-4">
           <p className="text-[14px]">Senaste produkter</p>
-          <ul className="bg-secondary rounded">
-            <li className="p-1">
-              Produkt 1 <span className="text-textOnPrimary"> / Kategori</span>
-            </li>
-            <li className="p-1">
-              Produkt 2<span className="text-textOnPrimary"> / Kategori</span>
-            </li>
-            <li className="p-1">
-              Produkt 3<span className="text-textOnPrimary"> / Kategori</span>
-            </li>
-            <li className="p-1">
-              Produkt 4<span className="text-textOnPrimary"> / Kategori</span>
-            </li>
-            <li className="p-1">
-              Produkt 5<span className="text-textOnPrimary"> / Kategori</span>
-            </li>
-          </ul>
+          <div className="rounded bg-secondary py-2 grid grid-cols-2 gap-2 relative after:content-[''] after:block after:h-full after:w-[2px] after:absolute after:bg-gray-200 after:left-1/2 after:-translate-x-1/2">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
         </div>
         <div className="my-4">
           <p className="text-[14px]">Senaste kategorier</p>
-          <ul className="bg-secondary rounded">
-            <li className="p-1">Kategori 1</li>
-            <li className="p-1">Kategori 2</li>
-            <li className="p-1">Kategori 3</li>
-            <li className="p-1">Kategori 4</li>
-            <li className="p-1">Kategori 5</li>
-          </ul>
+          <div className="grid grid-cols-2 gap-2 bg-secondary w-full rounded-xl">
+            <CategoryCard />
+            <CategoryCard />
+            <CategoryCard />
+            <CategoryCard />
+          </div>
         </div>
       </div>
     </section>
